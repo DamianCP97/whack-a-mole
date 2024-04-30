@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ededed;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#puntuacion {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    display: none;
+}
+
+#tablero {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    width: 50%;
+    margin-inline: auto;
+    margin-top: 2rem;
+
+    .casilla {
+        width: 80%;
+        padding-block: 1rem;
+        border-radius: 5px;
+        border-width: 1px;
+    }
+}
+
+.centrar-div {
+    text-align: center;
+    margin-top: 2rem;
+
+    button {
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: rgb(12, 242, 12);
+        border-color: rgb(32, 221, 32);
+        border-width: 3px;
+        border-radius: 5px;
+    }
+}
+
+#temporizador {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    display: none;
+}
