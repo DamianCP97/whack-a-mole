@@ -16,7 +16,7 @@ btnEmpezar.addEventListener('click', () => {
 
     cambiarColor();
     cuentaAtras();
-    setTimeout(fin, 30000); //Ejecuta el código de la función fin() cuando pasen 30 segundos
+    //setTimeout(fin, 30000); //Ejecuta el código de la función fin() cuando pasen 30 segundos
 });
 
 Array.from(casilla).forEach(casilla => { //Con Array.from() transformamos el HTMLCollection que devuelve el document.getElementsByClassName('casilla') en un array para poder trabajar con él
@@ -43,10 +43,10 @@ let segundos = 30;
 const cuentaAtras = () => {
     const intervalo = setInterval(() => {
         temporizador.innerText = segundos;
-        /* cambiarColor(); */
         segundos--;
         if (segundos === 0) {
-            clearInterval(intervalo); //Detiene el intervalo cuando segundos llega a 0
+            clearInterval(intervalo);
+            fin(); // Llama a la función fin() cuando el temporizador llega a cero
         }
     }, 1000);
 };
