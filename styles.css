@@ -51,11 +51,16 @@ h1 {
         border-width: 3px;
         border-radius: 5px;
     }
+
 }
 
 #temporizador {
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
+    display: none;
+}
+
+#reiniciar {
     display: none;
 }
